@@ -1,0 +1,10 @@
+[template]
+prefix="/motion"
+src="cams.sh"
+dest="/cams.sh"
+mode="0700"
+keys = [ 
+	"/",
+]
+
+reload_cmd="/cams.sh"

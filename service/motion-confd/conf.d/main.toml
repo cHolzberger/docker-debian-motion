@@ -1,0 +1,9 @@
+[template]
+prefix="/motion"
+src="motion.conf"
+dest="/etc/motion/motion.conf"
+keys = [ 
+	"/",
+]
+
+reload_cmd="sv restart /service/motion"

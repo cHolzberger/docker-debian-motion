@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sv start /service/motion-confd || exit 1
+exec motion
