@@ -15,10 +15,15 @@ input -1
 text_left {{$data.name}}
 netcam_url "{{$data.src}}"
 netcam_userpass admin:admin
-stream_port 808{{$data.id}}
 width {{$data.width}}
 height {{$data.height}}
-target_dir /tmp/
+despeckle_filter EedDl
+lightswitch 80
+
+#restream
+stream_port 808{{$data.id}}
+stream_maxrate 25
+stream_quality 90
 END
 {{end}}
 
